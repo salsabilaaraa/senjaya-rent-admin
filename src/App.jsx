@@ -292,12 +292,12 @@ export default function App() {
 
   const handleBackToHome = () => {
     const adminUrl = window.location.origin;
-    let websiteUrl = "https://senjaya-rent.vercel.app"; // Default production fallback
+    let websiteUrl = "https://senja-jaya-rent.vercel.app"; // Default production fallback
 
     if (import.meta.env.VITE_WEBSITE_URL) {
       websiteUrl = import.meta.env.VITE_WEBSITE_URL;
     } else if (adminUrl.includes("localhost")) {
-      websiteUrl = "https://senjaya-rent.vercel.app"; // Always redirect to production site even locally, as requested
+      websiteUrl = "https://senja-jaya-rent.vercel.app"; // Always redirect to production site even locally, as requested
     } else if (adminUrl.includes("-admin")) {
       websiteUrl = adminUrl.replace("-admin", ""); // Auto detect Vercel production
     }
@@ -320,7 +320,7 @@ export default function App() {
         {/* Login Card */}
         <div className="w-full max-w-md bg-surface-container-lowest border border-outline-variant/30 rounded-2xl shadow-level-2 p-8 z-10">
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-bold text-on-surface tracking-tight mb-2">Portal Admin Senjaya Rent</h1>
+            <h1 className="text-2xl font-bold text-on-surface tracking-tight mb-2">Portal Admin Senja Jaya Rent</h1>
             <p className="text-on-surface-variant text-sm">Masukkan email dan kata sandi admin resmi Anda</p>
           </div>
 
@@ -332,7 +332,7 @@ export default function App() {
                 <input
                   type="email"
                   required
-                  placeholder="admin@senjayarent.com"
+                  placeholder="admin@senjajayarent.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-surface border border-outline-variant/60 focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl py-3 pl-11 pr-4 text-on-surface placeholder-on-surface-variant/55 outline-none transition-all"
@@ -389,7 +389,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center font-bold text-lg text-on-secondary">S</div>
             <div>
-              <h1 className="text-lg font-bold text-on-primary leading-none mb-1">Senjaya Rent</h1>
+              <h1 className="text-lg font-bold text-on-primary leading-none mb-1">Senja Jaya Rent</h1>
               <p className="text-[10px] text-secondary-fixed font-bold tracking-widest uppercase">Dashboard Admin</p>
             </div>
           </div>

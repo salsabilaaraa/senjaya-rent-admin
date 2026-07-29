@@ -1,6 +1,6 @@
-# Portal Admin - Senjaya Rent
+# Portal Admin - Senja Jaya Rent
 
-Proyek ini adalah sistem pengelolaan armada terpisah untuk **Senjaya Rent**, yang dirancang khusus untuk administrator mengelola katalog mobil secara aman dan instan tanpa mencampuradukkan kode admin di sisi pengguna.
+Proyek ini adalah sistem pengelolaan armada terpisah untuk **Senja Jaya Rent**, yang dirancang khusus untuk administrator mengelola katalog mobil secara aman dan instan tanpa mencampuradukkan kode admin di sisi pengguna.
 
 ## 🔐 Panduan Keamanan & Anti-Hacker
 
@@ -29,7 +29,7 @@ Saat ini portal menggunakan validasi PIN lokal (`admin123`). Untuk perlindungan 
 - Ganti logika form login di `App.jsx` menggunakan API resmi Supabase:
   ```javascript
   const { data, error } = await supabase.auth.signInWithPassword({
-    email: 'admin@senjayarent.com',
+    email: 'admin@senjajayarent.com',
     password: password
   });
   ```
